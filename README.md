@@ -1,4 +1,4 @@
-# Monte Carlo method to obtain diffusion constants (mcdiff)
+# MC to obtain diffusion constants (mcdiff)
 
 Note: this is cloned version of [this repository](https://github.com/annekegh/mcdiff.git)
 from An Ghysels ([annekegh](https://github.com/annekegh)) and Gerhard Hummer. Please visit their profile.
@@ -12,15 +12,15 @@ permeabilities via the Inhomogeneous Solubility Diffusion model.
 ```
 git clone https://github.com/simongravelle/mcdiff.git
 cd mcdiff
-python setup.py install
+sudo python3 setup.py install
 ```
 
 ### License
 
-MIT License. 
-See LICENSE file.
+[MIT License](LICENSE)
 
 ### Authors
+
 - An Ghysels, Ghent University
 - Gerhard Hummer, MPI for Biophysics
 
