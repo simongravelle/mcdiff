@@ -326,7 +326,7 @@ def print_profiles(f,model,v,w,wrad=None,final=False,error=None,unit="internal")
     # units:
     F = v  # in kBT
     edges = model.edges  # in angstrom
-    if unit is "internal":
+    if unit == "internal":
         D = np.exp(w+model.wunit)  # in angstrom**2 per [unit-lag-times]
         if wrad is not None:
             Drad = np.exp(wrad+model.wradunit)  # in angstrom**2 per [unit-lag-times]
@@ -338,7 +338,7 @@ def print_profiles(f,model,v,w,wrad=None,final=False,error=None,unit="internal")
         Fst = error[0] # in kBT
         Dst = error[1]
         Dradst = error[2]
-        if unit is "internal":
+        if unit == "internal":
             Dst = np.exp(error[1]+model.wunit)
             if wrad is not None:
                 Dradst = np.exp(error[2]+model.wradunit)   #### let's hope this never happens, because this is not really okay ####
